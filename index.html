@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerta de Stock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Alerta de Stock</h1>
+    <div class="container">
+        <label for="product-name">Nombre del Producto:</label>
+        <input type="text" id="product-name" readonly value="Producto Ejemplo">
+
+        <label for="stock-level">Nivel de Stock:</label>
+        <input type="number" id="stock-level" min="0">
+
+        <button id="save-button">Guardar</button>
+
+        <p id="alert-message" class="hidden">El stock del producto <span id="product-name-alert"></span> está por debajo del mínimo establecido. Por favor, reponerlo.</p>
+    </div>
+    <script src="bundle.js"></script>
+</body>
+</html>
+
